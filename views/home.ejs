@@ -1,0 +1,13 @@
+<%- include("partials/header"); -%>
+<h1>MY DIARY</h1>
+<h3>Tell me about your day :) </h3>
+<%  posts.forEach(function(post){ %>
+    <h2><%=post.title%></h2>
+    <p><%=post.body%></p>
+    
+    <% }) %>
+
+<div class="btn">
+    <a href="/compose" class="bt">New Entry</a>
+</div>
+<%- include("partials/footer"); -%>

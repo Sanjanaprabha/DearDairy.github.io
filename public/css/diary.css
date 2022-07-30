@@ -1,0 +1,82 @@
+*{
+   
+    background-image: url(/img/img1.jpg);
+    background-size: 1500px 975px;
+    margin: 0%;
+}
+
+.navlist{
+    display: flex;
+    float: right;
+    
+}
+.navbar-brand{
+    text-decoration: none;
+    color: white;
+    margin-right: 867px;
+}
+.navlist li a{
+    color: white;
+    cursor: pointer;
+    text-decoration: none; 
+
+}
+.navlist li{
+    list-style: none; 
+    padding: 30px;
+    font-family:'ubuntu','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.navlist li a:hover{
+    color: #517ffd !important;
+}
+
+
+
+.footer {
+	position: fixed;
+	text-align: center;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	
+}
+
+.footer p {
+	margin-top: 25px;
+	font-size: 12px;
+  color: #fff;
+}
+.middle{
+    text-align: center;
+    padding: 15px;
+    color: white;
+    font-size: xx-large;
+    font-family: 'magic',Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.h1{
+    margin-top: 245px;
+}
+.p{
+    margin-top: 40px;
+}
+.btn{
+    text-decoration: none;
+    width: 115px;
+    height: 54px;
+    margin-top: 10px;
+    margin-left: 623px;
+    border-radius: 55px;
+    color: white;
+    position: absolute;
+    cursor: pointer;
+    border: 2px solid white;
+
+}
+.link{
+    text-decoration: none;
+    color: white;
+}
+.btn:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+}

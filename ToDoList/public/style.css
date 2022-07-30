@@ -1,0 +1,30 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'ubuntu','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+html{
+    background: url("img/milad-fakurian-UiiHVEyxtyA-unsplash.jpg");
+    background-size: 1500px 975px;
+}
+
+.head{
+    color: rgb(153, 55, 245);
+    text-align: center;
+    padding: 20px;
+    Margin: 13px;
+}
+#heading{
+    text-align: center;
+}
+.box{
+    max-width: 400px;
+    /* margin: 50px auto; */
+    margin: auto;
+    background: rgb(180, 206, 247);
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+.item{
+    display: flex;
+}
