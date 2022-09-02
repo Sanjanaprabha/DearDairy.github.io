@@ -2,7 +2,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const app = express();
-let items = [];
+const mongoose = require("mongoose");
 
 
 app.use(bodyParser.urlencoded({extended:true}));
@@ -10,24 +10,37 @@ app.use(bodyParser.urlencoded({extended:true}));
 app.set("view engine","ejs");
 app.use(express.static("public"))
 
+mongoose.connect("mongodb://localhost:27017/todolistdb")
+const itemSchema ={
+    Name:String
+}
+const Item = mongoose.model("Item",itemSchema)
+
 app.get("/",function(req,res){
-    var today = new Date();
+    Item.find({},function(err,foundItems){
+
+        res.render("list",{
+            kindofday:day,
+            newlistitems: foundItems  
+        })
+    }) 
+    var today = new Date(); 
     var options={
         weekday:"long",
         day:"numeric",
         month:"long"
     }
     var day = today.toLocaleDateString("en-US",options);
-    res.render("list",{
-        kindofday:day,
-        newlistitems: items
-    })
 })
 
 app.post("/",function(req,res){
-    var name = req.body.newitem;
-    items.push(name);
+    const itemName = req.body.newitem;
+    const item = new Item({
+        Name:itemName
+    })
+    item.save();
     res.redirect("/");
+    
 })
 
 
