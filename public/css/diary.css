@@ -65,7 +65,7 @@
     width: 115px;
     height: 54px;
     margin-top: 10px;
-    margin-left: 623px;
+    margin-left: 584px;
     border-radius: 55px;
     color: white;
     position: absolute;
@@ -81,3 +81,35 @@
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 
 }
+@media screen and (max-width:1024px) {
+    .btn {
+        text-decoration: none;
+        width: 115px;
+        height: 54px;
+        margin-top: 10px;
+        margin-left: 334px;
+        border-radius: 55px;
+        color: white;
+        position: absolute;
+        cursor: pointer;
+        border: 2px solid white;
+      
+    }
+    
+}
+@media screen and (max-width:414px) {
+    .btn {
+        text-decoration: none;
+        width: 115px;
+        height: 54px;
+        margin-top: 10px;
+        margin-left: 160px;
+        border-radius: 55px;
+        color: white;
+        position: absolute;
+        cursor: pointer;
+        border: 2px solid white;
+    }
+    
+}
+
